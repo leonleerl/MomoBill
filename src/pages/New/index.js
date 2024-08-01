@@ -24,6 +24,17 @@ const New = () => {
   const [useFor, setUseFor] = useState("");
 
   const dispatch = useDispatch();
+  // 控制时间打开关闭
+  const [dateVisible, setDateVisible] = useState(false);
+  //存储选择的时间
+  const [date, setDate] = useState();
+
+  // 确认选择时间
+  const dateConfirm = (value) => {
+    console.log(value);
+    setDate(value);
+    setDateVisible(false);
+  };
 
   // 保存账单
   const saveBill = () => {
@@ -31,7 +42,7 @@ const New = () => {
     const data = {
       type: billType,
       money: toInteger(billType === "income" ? money : -money),
-      date: new Date(),
+      date: date,
       useFor: useFor,
     };
     setMoney(0);
@@ -66,11 +77,16 @@ const New = () => {
           <div className="kaForm">
             <div className="date">
               <Icon type="calendar" className="icon" />
-              <span className="text">{"今天"}</span>
+              <span className="text" onClick={() => setDateVisible(true)}>
+                {dayjs(date).format("YYYY年MM月DD日")}
+              </span>
+              {/* 时间选择器 */}
               <DatePicker
                 className="kaDate"
                 title="记账日期"
                 max={new Date()}
+                visible={dateVisible}
+                onConfirm={dateConfirm}
               />
             </div>
             <div className="kaInput">
@@ -95,8 +111,12 @@ const New = () => {
               <div className="list">
                 {item.list.map((item) => {
                   return (
+                    // selected
                     <div
-                      className={classNames("item", "")}
+                      className={classNames(
+                        "item",
+                        useFor === item.type ? "selected" : ""
+                      )}
                       key={item.type}
                       onClick={() => setUseFor(item.type)}
                     >
