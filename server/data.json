@@ -104,24 +104,48 @@
       "date": "2024-08-01T11:08:56.036Z",
       "useFor": "food",
       "id": 22
-    },    {
+    },
+    {
       "type": "pay",
       "money": -645,
       "date": "2024-08-04T11:08:56.036Z",
       "useFor": "travel",
       "id": 23
-    },    {
+    },
+    {
       "type": "pay",
       "money": -400,
       "date": "2024-08-05T11:08:56.036Z",
       "useFor": "travel",
       "id": 24
-    },    {
+    },
+    {
       "type": "pay",
       "money": -30,
       "date": "2024-08-11T11:08:56.036Z",
       "useFor": "food",
       "id": 25
+    },
+    {
+      "id": "1232",
+      "type": "income",
+      "money": 1130,
+      "date": "2024-08-01T03:15:07.971Z",
+      "useFor": "overtimepay"
+    },
+    {
+      "id": "a3e4",
+      "type": "pay",
+      "money": -12120,
+      "date": "2024-08-01T03:18:15.755Z",
+      "useFor": "drinks"
+    },
+    {
+      "id": "3c1a",
+      "type": "income",
+      "money": 30000,
+      "date": "2024-08-01T03:18:49.901Z",
+      "useFor": "salary"
     }
   ]
 }
