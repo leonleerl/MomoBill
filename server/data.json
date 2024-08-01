@@ -86,10 +86,42 @@
     },
     {
       "type": "pay",
-      "money": 660,
+      "money": -660,
       "date": "2024-07-03T11:14:56.036Z",
       "useFor": "food",
       "id": 20
+    },
+    {
+      "type": "income",
+      "money": 3200,
+      "date": "2024-08-01T11:07:56.036Z",
+      "useFor": "bonus",
+      "id": 21
+    },
+    {
+      "type": "pay",
+      "money": -300,
+      "date": "2024-08-01T11:08:56.036Z",
+      "useFor": "food",
+      "id": 22
+    },    {
+      "type": "pay",
+      "money": -645,
+      "date": "2024-08-04T11:08:56.036Z",
+      "useFor": "travel",
+      "id": 23
+    },    {
+      "type": "pay",
+      "money": -400,
+      "date": "2024-08-05T11:08:56.036Z",
+      "useFor": "travel",
+      "id": 24
+    },    {
+      "type": "pay",
+      "money": -30,
+      "date": "2024-08-11T11:08:56.036Z",
+      "useFor": "food",
+      "id": 25
     }
   ]
 }
