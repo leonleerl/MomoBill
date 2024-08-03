@@ -2,7 +2,9 @@
 
 # 简介
 
-MomoBill是一个记账软件app。
+MomoBill是一个采用React的记账软件。
+
+开发中...
 
 # 部署
 
