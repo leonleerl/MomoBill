@@ -2,7 +2,7 @@
 
 # 简介
 
-MomoBill是一个记账软件app。
+MomoBill是一个记账软件。
 
 # 部署
 
